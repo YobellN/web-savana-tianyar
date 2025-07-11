@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Clock, Ticket, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function TopInfoHeader() {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,7 +48,7 @@ export default function TopInfoHeader() {
           </div>
           
           {/* Right side - Contact */}
-          <a 
+          <Link 
             href="tel:+6281234567890" 
             className="flex items-center hover:bg-emerald-600/50 px-2 py-1 rounded-md transition-all duration-200 text-xs"
           >
@@ -55,7 +56,7 @@ export default function TopInfoHeader() {
             <span className="font-semibold">
               0812-3456-7890
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </motion.div>

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Instagram, Facebook, Mail, Phone, MapPin, Heart } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   const ref = useRef(null);
@@ -28,7 +29,7 @@ export default function Footer() {
               Rencanakan perjalanan Anda sekarang!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20untuk%20berkunjung%20ke%20Savana%20Tianyar"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -36,7 +37,7 @@ export default function Footer() {
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Hubungi Kami
-              </a>
+              </Link>
               <button
                 onClick={() => {
                   if (navigator.share) {
@@ -72,22 +73,22 @@ export default function Footer() {
                 Nikmati keindahan savana dengan latar Gunung Agung yang memukau.
               </p>
               <div className="flex space-x-4">
-                <a
+                <Link
                   href="https://instagram.com/savanatianyar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <Instagram className="w-6 h-6" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://facebook.com/savanatianyar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <Facebook className="w-6 h-6" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -96,24 +97,24 @@ export default function Footer() {
               <h3 className="text-xl font-bold mb-4">Menu Cepat</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#about" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="#about" className="text-gray-400 hover:text-white transition-colors">
                     Tentang
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#gallery" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="#gallery" className="text-gray-400 hover:text-white transition-colors">
                     Galeri
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#info" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="#info" className="text-gray-400 hover:text-white transition-colors">
                     Informasi
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#testimonial" className="text-gray-400 hover:text-white transition-colors">
+                  <Link href="#testimonial" className="text-gray-400 hover:text-white transition-colors">
                     Testimoni
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
