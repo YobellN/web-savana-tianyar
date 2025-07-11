@@ -29,7 +29,6 @@ export default function TopInfoHeader() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-2">
-          {/* Left side - Compact info */}
           <div className="flex items-center gap-4 text-xs">
             <div className="flex items-center">
               <Clock className="w-3 h-3 mr-1.5 text-emerald-200" />
@@ -46,7 +45,6 @@ export default function TopInfoHeader() {
             </div>
           </div>
           
-          {/* Right side - Contact */}
           <a 
             href="tel:+6281234567890" 
             className="flex items-center hover:bg-emerald-600/50 px-2 py-1 rounded-md transition-all duration-200 text-xs"

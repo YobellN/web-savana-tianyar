@@ -48,16 +48,6 @@ export default function InfoSection() {
         "Sinar UV tinggi, gunakan sunscreen",
         "Bawa jaket untuk pagi/sore hari"
       ]
-    },
-    {
-      icon: Backpack,
-      title: "Tips Praktis",
-      content: [
-        "Bawa air minum dan snack ringan",
-        "Gunakan sepatu trekking yang nyaman",
-        "Kamera/HP dengan baterai penuh",
-        "Datang lebih awal untuk spot terbaik"
-      ]
     }
   ];
 
