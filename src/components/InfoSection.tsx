@@ -3,13 +3,23 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Clock, MapPin, Thermometer, Backpack, ExternalLink } from 'lucide-react';
+import { Clock, MapPin, Thermometer, Backpack, ExternalLink, Ticket } from 'lucide-react';
 
 export default function InfoSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const infoCards = [
+    {
+      icon: Ticket,
+      title: "Harga Tiket Masuk",
+      content: [
+        "Wisatawan Domestik: Rp 10.000/orang",
+        "Wisatawan Mancanegara: Rp 20.000/orang",
+        "Anak-anak (3-12 tahun): 50% dari harga normal",
+        "Parkir motor: Rp 5.000, mobil: Rp 10.000"
+      ]
+    },
     {
       icon: Clock,
       title: "Waktu Terbaik Berkunjung",
