@@ -27,8 +27,12 @@ export const metadata: Metadata = {
     title: "Savana Tianyar - Alam Liar di Ujung Timur Bali",
     description: "Temukan ketenangan di hamparan savana dengan latar Gunung Agung",
   },
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
