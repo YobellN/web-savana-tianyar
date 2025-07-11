@@ -95,7 +95,6 @@ export default function ActivitiesSection() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
             >
-              {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
                   src={activity.image}
@@ -106,20 +105,17 @@ export default function ActivitiesSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 
-                {/* Popular Badge */}
                 {activity.popular && (
                   <div className="absolute top-4 left-4 px-3 py-1 bg-emerald-500 text-white text-xs font-semibold rounded-full">
                     Populer
                   </div>
                 )}
 
-                {/* Icon */}
                 <div className="absolute bottom-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
                   <activity.icon className="w-6 h-6 text-emerald-600" />
                 </div>
               </div>
 
-              {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
                   {activity.title}
@@ -128,7 +124,6 @@ export default function ActivitiesSection() {
                   {activity.description}
                 </p>
 
-                {/* Meta Info */}
                 <div className="flex justify-between items-center text-sm text-gray-500">
                   <div className="flex items-center">
                     <span className="font-medium">Durasi:</span>
@@ -140,7 +135,6 @@ export default function ActivitiesSection() {
                   </div>
                 </div>
 
-                {/* CTA */}
                 <button className="mt-4 w-full py-2 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium rounded-lg transition-colors duration-200">
                   Pelajari Lebih Lanjut
                 </button>
@@ -149,7 +143,6 @@ export default function ActivitiesSection() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}

@@ -14,10 +14,9 @@ export default function Home() {
       <TopInfoHeader />
       <HeroSection />
       <AboutSection />
-      <ActivitiesSection />
-      <SavanaInfoSection />
-      <GallerySection />
       <InfoSection />
+      <ActivitiesSection />
+      <GallerySection />
       <TestimonialSection />
       <Footer />
     </main>

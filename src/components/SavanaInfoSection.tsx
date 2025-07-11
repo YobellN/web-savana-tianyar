@@ -78,7 +78,6 @@ export default function SavanaInfoSection() {
           </p>
         </motion.header>
 
-        {/* Main Features */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
           {savanaFeatures.map((feature, index) => (
             <motion.article
@@ -114,7 +113,6 @@ export default function SavanaInfoSection() {
           ))}
         </div>
 
-        {/* Wildlife Section */}
         <motion.section
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -154,7 +152,6 @@ export default function SavanaInfoSection() {
           </div>
         </motion.section>
 
-        {/* Conservation Message */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}

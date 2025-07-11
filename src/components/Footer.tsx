@@ -61,11 +61,9 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* Footer Content */}
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* About */}
             <div>
               <h3 className="text-xl font-bold mb-4">Savana Tianyar</h3>
               <p className="text-gray-400 mb-4">
@@ -92,7 +90,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Quick Links */}
             <div>
               <h3 className="text-xl font-bold mb-4">Menu Cepat</h3>
               <ul className="space-y-2">
@@ -119,7 +116,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Contact Info */}
             <div>
               <h3 className="text-xl font-bold mb-4">Kontak</h3>
               <div className="space-y-3">
@@ -138,7 +134,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Visit Hours */}
             <div>
               <h3 className="text-xl font-bold mb-4">Jam Kunjungan</h3>
               <div className="space-y-2 text-gray-400 text-sm">
@@ -155,7 +150,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-gray-800 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center">

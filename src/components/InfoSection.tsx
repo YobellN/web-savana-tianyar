@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Clock, MapPin, Thermometer, Backpack, ExternalLink, Ticket } from 'lucide-react';
+import { Clock, MapPin, Thermometer, ExternalLink, Ticket } from 'lucide-react';
 import Link from 'next/link';
 
 export default function InfoSection() {
@@ -99,7 +99,6 @@ export default function InfoSection() {
           ))}
         </div>
 
-        {/* Google Maps Link */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}

@@ -20,9 +20,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background Layers */}
       <div className="absolute inset-0 z-0">
-        {/* Main Background */}
         <Image
           src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg"
           alt="Savana Tianyar dengan latar Gunung Agung"
@@ -33,11 +31,9 @@ export default function HeroSection() {
           sizes="100vw"
         />
         
-        {/* Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/20 to-transparent" />
         
-        {/* Floating Elements */}
         <motion.div
           animate={{ 
             y: [0, -20, 0],
@@ -65,9 +61,7 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Content Container */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        {/* Location Badge */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,7 +72,6 @@ export default function HeroSection() {
           Karangasem, Bali Timur
         </motion.div>
 
-        {/* Main Title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -93,7 +86,6 @@ export default function HeroSection() {
           </span>
         </motion.h1>
 
-        {/* Description */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -104,7 +96,6 @@ export default function HeroSection() {
           Tempat di mana langit bertemu bumi dalam harmoni sempurna.
         </motion.p>
 
-        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -123,7 +114,6 @@ export default function HeroSection() {
           ))}
         </motion.div>
 
-        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -147,7 +137,6 @@ export default function HeroSection() {
           </button>
         </motion.div>
 
-        {/* Quick Info */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -165,7 +154,6 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -183,7 +171,6 @@ export default function HeroSection() {
         </motion.div>
       </motion.div>
 
-      {/* Video Modal */}
       {isVideoPlaying && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
           <button
