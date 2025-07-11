@@ -10,11 +10,9 @@ export default function TopInfoHeader() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show header after scrolling past hero section (approximately 80vh)
       setIsVisible(window.scrollY > window.innerHeight * 0.8);
     };
 
-    // Set initial state
     handleScroll();
     
     window.addEventListener('scroll', handleScroll);
@@ -46,7 +44,6 @@ export default function TopInfoHeader() {
             </div>
           </div>
           
-          {/* Right side - Contact */}
           <Link 
             href="tel:+6281234567890" 
             className="flex items-center hover:bg-emerald-600/50 px-2 py-1 rounded-md transition-all duration-200 text-xs"
