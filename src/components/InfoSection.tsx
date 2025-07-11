@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Clock, MapPin, Thermometer, Backpack, ExternalLink, Ticket } from 'lucide-react';
+import Link from 'next/link';
 
 export default function InfoSection() {
   const ref = useRef(null);
@@ -105,7 +106,7 @@ export default function InfoSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-center"
         >
-          <a
+          <Link
             href="https://maps.google.com/?q=Savana+Tianyar+Karangasem+Bali"
             target="_blank"
             rel="noopener noreferrer"
@@ -114,7 +115,7 @@ export default function InfoSection() {
             <MapPin className="w-5 h-5 mr-2" />
             Buka di Google Maps
             <ExternalLink className="w-4 h-4 ml-2" />
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
